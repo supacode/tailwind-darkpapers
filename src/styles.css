@@ -4,16 +4,32 @@
 
 
 .card {
-    @apply bg-white shadow rounded-md overflow-hidden relative mb-8 ;
+    @apply bg-white shadow rounded-md overflow-hidden relative mb-8;
+    transition:  .5s ease-out;
 }
 
 .card:hover {
-    @apply shadow-lg
+    @apply shadow-lg;
+    transform: scale(1.03);
 }
 
 .card__img {
     @apply w-full object-cover;
+    height: 13rem;
 }
+
+.card__title {
+  @apply  font-bold;
+}
+
+.card__author {
+    @apply text-sm;
+}
+
+.card__title a:hover,.card__author:hover a:hover{
+    @apply text-primary;
+}
+
 
 .card__badge {
     @apply absolute top-0 rounded-full bg-gray-600 py-1 px-3  text-xs text-white uppercase ml-3 mt-3;

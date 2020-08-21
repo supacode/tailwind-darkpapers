@@ -22400,16 +22400,33 @@ video {
   overflow: hidden;
   position: relative;
   margin-bottom: 2rem;
+  transition:  .5s ease-out;
 }
 
 .card:hover {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transform: scale(1.03);
 }
 
 .card__img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 13rem;
+}
+
+.card__title {
+  font-weight: 700;
+}
+
+.card__author {
+  font-size: 0.875rem;
+}
+
+.card__title a:hover,.card__author:hover a:hover{
+  --text-opacity: 1;
+  color: #147dc4;
+  color: rgba(20, 125, 196, var(--text-opacity));
 }
 
 .card__badge {
