@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.card {
+    @apply bg-white shadow-md rounded-md overflow-hidden relative mb-8;
+    width:30%;
+}
+
+.card__img {
+    @apply w-full object-cover;
+}
+
+.card__badge {
+    @apply absolute top-0 rounded-full bg-gray-600 p-1 text-xs text-white uppercase ml-3 mt-3;
+}
