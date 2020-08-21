@@ -8,16 +8,42 @@
   </head>
   <body class="text-gray-600">
     <div class="grid md:grid-cols-5">
-      <div class="p-6 md:col-span-1">
-        <nav class="">
-          <div>
-            <h1 class="text-gray-700 font-bold uppercase">Logo</h1>
+      <div class="md:py-6 py-2 md:col-span-1">
+        <nav>
+          <div class="text-right mb-5 flex justify-between items-center">
+            <h1 class="text-gray-700 px-6 text-xl font-bold uppercase">Logo</h1>
+
+            <div class="px-4 md:hidden block">
+                <svg class="w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <rect x="48" y="48" width="176" height="176" rx="20" ry="20" style="
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 32px;
+                      "></rect>
+                    <rect x="288" y="48" width="176" height="176" rx="20" ry="20" style="
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 32px;
+                      "></rect>
+                    <rect x="48" y="288" width="176" height="176" rx="20" ry="20" style="
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 32px;
+                      "></rect>
+                    <rect x="288" y="288" width="176" height="176" rx="20" ry="20" style="
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 32px;
+                      "></rect>
+                  </svg>
+            </div>
+
           </div>
 
-          <ul class="flex">
-            <li class="ml-5"><a href="#">Home</a></li>
-            <li class="ml-5"><a href="#">About</a></li>
-            <li class="ml-5"><a href="#">Contact Us</a></li>
+          <ul class="text-right hidden md:block">
+            <li class="nav-link nav-link__active"><a href="#">Home</a></li>
+            <li class="nav-link"><a href="#">About</a></li>
+            <li class="nav-link"><a href="#">Contact Us</a></li>
           </ul>
         </nav>
       </div>
@@ -25,9 +51,9 @@
 
       <!-- main -->
       <main class="md:col-span-4 p-10 lg:p-16 bg-gray-100">
-        <div class="mb-6 flex lg:justify-end text-red-600 justify-center">
-          <a href="#" class="font-semibold">Create Account</a>
-          <a href="#" class="ml-3 font-semibold">Signup</a>
+        <div class="mb-6 flex lg:justify-end text-red-400 justify-center">
+          <a href="#" class="btn md:border-2 hover:bg-red-400  hover:text-white text-red-400 border-red-400">Create Account</a>
+          <a href="#" class="btn md:border-2 hover:bg-red-400 hover:text-white text-red-400 border-red-400 ml-3">Signup</a>
         </div>
 
         <header class="mb-4">
@@ -80,16 +106,8 @@
           <!-- card end -->
         </div>
 
-        <div class="mb-8 border-b border-gray-500 pb-2">
-          <h4 class="font-bold">Most Popular</h4>
-        </div>
-
-        <div>
-          <!--  cards again -->
-        </div>
-
         <div class="flex justify-center">
-          <p class="bg-gray-400 px-4 py-2 text-md text-primary rounded-full">Load more</p>
+          <button class="btn bg-gray-400 text-primary hover:shadow-inner">Load more</button>
         </div>
       </main>
     </div>
