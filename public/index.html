@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/index.js" defer></script>
   </head>
   <body class="text-gray-600">
     <div class="grid md:grid-cols-5">
@@ -13,7 +14,7 @@
           <div class="text-right mb-5 flex justify-between items-center">
             <h1 class="text-gray-700 px-6 text-xl font-bold uppercase">Logo</h1>
 
-            <div class="px-4 md:hidden block">
+            <div class="px-4 md:hidden block" id="toggle-menu">
                 <svg class="w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <rect x="48" y="48" width="176" height="176" rx="20" ry="20" style="
                         stroke-linecap: round;
@@ -40,7 +41,7 @@
 
           </div>
 
-          <ul class="text-right hidden md:block">
+          <ul class="text-right hidden md:block" id="main-nav">
             <li class="nav-link nav-link__active"><a href="#">Home</a></li>
             <li class="nav-link"><a href="#">About</a></li>
             <li class="nav-link"><a href="#">Contact Us</a></li>
@@ -52,8 +53,8 @@
       <!-- main -->
       <main class="md:col-span-4 p-10 lg:p-16 bg-gray-100">
         <div class="mb-6 flex lg:justify-end text-red-400 justify-center">
-          <a href="#" class="btn md:border-2 hover:bg-red-400  hover:text-white text-red-400 border-red-400">Create Account</a>
-          <a href="#" class="btn md:border-2 hover:bg-red-400 hover:text-white text-red-400 border-red-400 ml-3">Signup</a>
+          <a href="#" class="btn md:border-2 hover:bg-red-400  hover:text-white text-red-400 border-red-400 transition ease-out duration-500">Create Account</a>
+          <a href="#" class="btn md:border-2 hover:bg-red-400 hover:text-white text-red-400 border-red-400 ml-3 transition ease-out duration-500">Log in</a>
         </div>
 
         <header class="mb-4">
@@ -107,7 +108,7 @@
         </div>
 
         <div class="flex justify-center">
-          <button class="btn bg-gray-400 text-primary hover:shadow-inner">Load more</button>
+          <button class="btn bg-gray-400 text-primary border-transparent  hover:bg-opacity-50 transform hover:scale-125 transition ease-out duration-500">Load more</button>
         </div>
       </main>
     </div>

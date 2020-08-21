@@ -22452,19 +22452,20 @@ video {
   border-color: transparent;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  font-weight: 600;
 }
 
 .nav-link:hover a{
   --text-opacity: 1;
-  color: #fc8181;
-  color: rgba(252, 129, 129, var(--text-opacity));
+  color: #147dc4;
+  color: rgba(20, 125, 196, var(--text-opacity));
 }
 
 .nav-link__active {
   margin-left: 1.25rem;
   --border-opacity: 1;
-  border-color: #fc8181;
-  border-color: rgba(252, 129, 129, var(--border-opacity));
+  border-color: #147dc4;
+  border-color: rgba(20, 125, 196, var(--border-opacity));
 }
 
 @media (min-width: 640px) {

@@ -25,13 +25,13 @@
 
 
 .nav-link {
-    @apply ml-5 mb-2 border-r-4 border-transparent px-6;
+    @apply ml-5 mb-2 border-r-4 border-transparent px-6 font-semibold;
 }
 
 .nav-link:hover a{
-    @apply text-red-400;
+    @apply text-primary;
 }
 
 .nav-link__active {
-    @apply ml-5  border-red-400;
+    @apply ml-5  border-primary;
 }
